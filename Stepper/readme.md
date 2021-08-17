@@ -11,7 +11,7 @@
 <img src='01_StepperHatTest\screenshots\20210817_161345_1024.jpg' width = 400px />
 
 
-### 테스트 영상
+### Test
 
 https://youtu.be/72XpgnHryAs
 
