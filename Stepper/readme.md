@@ -16,6 +16,23 @@
 
 <img src='01_StepperHatTest/screenshots/bipolar_winding_direciton.png' width = 600px />
 
+### AF_Stepper Class
+step(#steps, direction, steptype)
+
+#steps is how many steps you'd like it to take.
+
+The direction is either FORWARD or BACKWARD
+
+The step type is SINGLE, DOUBLE, INTERLEAVE or MICROSTEP.<br>
+<ul>
+<li>"Single" means single-coil activation</li>
+<li>"Double" means 2 coils are activated at once (for higher torque)</li>
+<li>"Interleave" means that it alternates between single and double to get twice the resolution (but of course its half the speed).</li>
+<li>"Microstepping" is a method where the coils are PWM'd to create smooth motion between steps.</li>
+</ul>
+
+https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/using-stepper-motors
+
 ### Test
 
 https://youtu.be/72XpgnHryAs
