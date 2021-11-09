@@ -51,7 +51,7 @@ void loop() {
     move_mode = 0;
   }
 
-  if(move_mode==3)
+  else if(move_mode==3)
   {
     Serial.println("DOUBLE coil steps (FORWARD)");
     myMotor->step(500, FORWARD, DOUBLE); 
@@ -62,6 +62,34 @@ void loop() {
   {
     Serial.println("DOUBLE coil steps (BACKWARD)");
     myMotor->step(500, BACKWARD, DOUBLE); 
+    move_mode = 0;
+  }
+
+  else if(move_mode==5)
+  {
+    Serial.println("DOUBLE coil steps (FORWARD)");
+    myMotor->step(100, FORWARD, DOUBLE); 
+    move_mode = 0;
+  }
+
+  else if(move_mode==6)
+  {
+    Serial.println("DOUBLE coil steps (BACKWARD)");
+    myMotor->step(100, BACKWARD, DOUBLE); 
+    move_mode = 0;
+  }
+
+  else if(move_mode==7)
+  {
+    Serial.println("DOUBLE coil steps (FORWARD)");
+    myMotor->step(10, FORWARD, DOUBLE); 
+    move_mode = 0;
+  }
+
+  else if(move_mode==8)
+  {
+    Serial.println("DOUBLE coil steps (BACKWARD)");
+    myMotor->step(10, BACKWARD, DOUBLE); 
     move_mode = 0;
   }
   
@@ -82,12 +110,27 @@ void serialEvent() {
     else if (inChar == '2') {
       move_mode = 2;
     }
-     if (inChar == '3') {
+    else if (inChar == '3') {
       move_mode = 3;
     }
     else if (inChar == '4') {
       move_mode = 4;
     }
+
+    else if (inChar == '5' || inChar=='a') {
+      move_mode = 5;
+    }
+    else if (inChar == '6' || inChar=='d') {
+      move_mode = 6;
+    }
+
+    else if (inChar == '7' || inChar=='z') {
+      move_mode = 7;
+    }
+    else if (inChar == '8' || inChar=='c') {
+      move_mode = 8;
+    }
+    
     
   }
 }
