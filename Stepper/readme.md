@@ -35,7 +35,8 @@ https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/using-stepper-mo
 
 ### Test
 
-<img src='Stepper/assets/20211109_123929.jpg' width='512px' />
+<img src='assets/20211109_123929.jpg' width='512px' />
+
 
 https://youtu.be/72XpgnHryAs
 
