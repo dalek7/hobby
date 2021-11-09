@@ -29,7 +29,7 @@ void setup() {
   AFMS.begin();  // create with the default frequency 1.6KHz
   //AFMS.begin(1000);  // OR with a different frequency, say 1KHz
   
-  myMotor->setSpeed(60);  // 10 rpm   
+  myMotor->setSpeed(120);  // 10 rpm   
 }
 
 void loop() {
